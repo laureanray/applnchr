@@ -1,0 +1,25 @@
+{
+  "name": "application-launcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "applnchr.id",
+    "protocols": {
+      "name": "applnchr-protocol",
+      "schemes": [
+        "applnchr"
+      ]
+    }
+  }
+}
